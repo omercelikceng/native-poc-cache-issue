@@ -1,0 +1,6 @@
+
+
+hazelcast:
+  addresses: hz1:5701
+
+
