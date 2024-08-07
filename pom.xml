@@ -48,8 +48,8 @@
 						<configuration>
 							<mainClass>com.example.NativePocCacheApplication</mainClass>
 							<image>
-                                				<name>docker.io/library/native-poc-cache-solution:${project.version}</name>
-                            				</image>
+								<name>docker.io/library/native-poc-cache-solution:${project.version}</name>
+							</image>
 						</configuration>
 						<executions>
 							<execution>
