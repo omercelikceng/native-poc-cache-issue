@@ -47,6 +47,9 @@
 						<artifactId>spring-boot-maven-plugin</artifactId>
 						<configuration>
 							<mainClass>com.example.NativePocCacheApplication</mainClass>
+							<image>
+								<name>docker.io/library/native-poc-cache-issue:${project.version}</name>
+							</image>
 						</configuration>
 						<executions>
 							<execution>
