@@ -2,9 +2,10 @@
 
 If you follow the steps below in order, you will encounter the error.
 1. mvn clean install
-2. mvn spring-boot:build-image -P native 
-3. docker run --name hz1 -p 5701:5701 --network=cache-network hazelcast/hazelcast:5.5.0-jdk17
-4. docker run --network=cache-network docker.io/library/native-poc-cache-issue:0.0.1-SNAPSHOT
+2. mvn spring-boot:build-image -P native
+3. docker network create cache-network
+4. docker run --name hz1 -p 5701:5701 --network=cache-network hazelcast/hazelcast:5.5.0-jdk17
+5. docker run --network=cache-network docker.io/library/native-poc-cache-issue:0.0.1-SNAPSHOT
 
 Error : 
 
